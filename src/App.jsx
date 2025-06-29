@@ -1,4 +1,3 @@
-import './app.css'
 import Hero from './components/hero.jsx'
 
 
