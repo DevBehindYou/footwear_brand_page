@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --black: black;
+    --gray: rgb(77, 77, 77);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+nav button{
+    all: unset;
+    padding: 2px 20px;
+    background: var(--black);
+    color: white;
+    height: 32px;
+    font-weight: 600;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+nav button:hover{
+    background: var(--gray);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+
+.hero{
+    margin: 0 auto;
+    height: 75vh;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-content{
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-content h1{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.hero-content span{
+    font-size: 50px;
+    background-image: linear-gradient(to right, #131313, #ff8c34); /* your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+}
+
+.hero-content p{
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.store-icon {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.logo-icon{
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-btn{
+    height: 75px;
+    display: flex;
+    max-width: 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shop-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-btn button{
+    all: unset;
+    padding: 2px 20px;
+    background: var(--black);
+    color: white;
+    height: 32px;
+    font-weight: 600;
+    border-radius: 9px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-image .3s ease-in-out;
+}
+
+.hero-btn button:hover{
+    background-image: linear-gradient(to right, #ffc60a, #c86112);
+}
+
+
+.Avlon p{
+    color: var(--gray);
+    font-size: 13px;
+}
+
+
+.shoe-image {
+  width: 450px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(10px 20px 30px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin: 0 10px;
+    height: 40px;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content span {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-top: 0px;
+  }
+
+  .hero-btn button {
+    width: 100%;
+  }
+
+  .Avlon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-image {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .store-icon {
+    width: 36px;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .shoe-image {
+    width: 280px;
+  }
+}
+
+
+
